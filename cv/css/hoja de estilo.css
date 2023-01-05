@@ -8,14 +8,18 @@ se vuelven accesibles a todo el documento. :root apunta al
 elemento HTML, pero tiene mayor "especificidad"/peso que hmtl{}(sobreescribe
 los valores que normalmente se imponen por cascada) */
 :root{
-    --main-bg-color: rgb(215, 238, 113);
-    --small-bg-color: rgb(170, 179, 120);
+    --light-bg-color: rgb(215, 238, 113);
+    --dark-bg-color: rgb(32, 32, 28);
+    --light-color: rgb(0, 0, 0);
+    --dark-color: rgb(240, 240, 240);
+    --col-light-color: rgb(147, 163, 75);
+    --col-dark-color: rgb(22, 22, 9);
 }
 
 /* se aplica la variable fijada en la pseudoclase :root,
 utilizando el método var(--nombre-de-lavariable) */
 body {
-    background-color: var(--main-bg-color);
+    background-color: var(--light-bg-color);
 }
 
 h1{
@@ -23,14 +27,25 @@ h1{
     
 }
 .col-3{
-    background-color: var(--small-bg-color);
-    color:rgb(23, 53, 26);
+    background-color: var(--col-light-color);
     overflow: auto;
     word-break: break-word;
 }
 form input, form textarea{
     display: block;    
-    } 
+    }
+
+div.fijado {
+position: fixed;
+top: 0;
+right: 0;
+overflow: auto;
+}
+
+button{
+    font-size: 2vw;
+
+}
 /* media query: cuando el tamaño de pantalla no
 exceda los 500 píxeles, aplica las propiedades
 especificadas. Bootstrap y otros frameworks
@@ -42,15 +57,16 @@ definen sus propios breakpoints
     }
 }
  */
-/*formateando una clase*/
+/*formateando una clase
 .miclase {
     color: red;
     font-weight: bold;
 }
+*/
 
 /*formateando diferentes IDs.
 Véase box-model para localizar
-border, margin y padding*/
+border, margin y padding
 #mititulo {
     border: 3px dotted grey;
     padding: 25px;
@@ -59,6 +75,7 @@ border, margin y padding*/
     color: rgb(20, 11, 129);
     text-shadow: 3px 0px 5px orange;
 }
+*/
 
 #mibajada {
     margin: 10px;

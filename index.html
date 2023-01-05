@@ -15,11 +15,16 @@
 <body>
     <h1>Howard Dunn</h1>
     <div class="row">
-    <div class="col-3">
+    <div class="col-3" id="columnalateral">
+    <div class="fijado">
+    <button type="button" id="temaclaro">Tema claro</button>
+    <br>
+    <button type="button" id="temaoscuro">Tema oscuro</button>
+    </div>
     <img src="cv/imagenes/fotoperfil.jpg" alt="Foto de perfil de Howard Dunn" style="max-width: 100%; height:auto">
-    <blockquote class="blockquote">
+    <p class="lead">
         "Ofrezco soluciones tecnológicas a empresas de desarrollo, clientes particulares y organizaciones sin fines de lucro."
-    </blockquote>
+    </p>
     <p><b>Datos de contacto</b></p>
     <p><i>Email:</i> howard.dunn@example.com</p>
     <p><i>Teléfono:</i> (372) 337-0484</p>
@@ -50,7 +55,7 @@
             <label>E-mail</label>
             <input type="email" name="email" placeholder="Tu e-mail" required/>
             <label for="consulta">Consulta</label>
-            <textarea id="consulta" name="dataconsulta" rows="10" cols="25" required>¿Cuál es tu consulta?</textarea>
+            <textarea id="consulta" name="dataconsulta" rows="8" cols="25" required>¿Cuál es tu consulta?</textarea>
             <input type="submit" value="Enviar">
         </form>
     </div>
