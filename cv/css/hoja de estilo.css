@@ -15,6 +15,7 @@ los valores que normalmente se imponen por cascada) */
 utilizando el método var(--nombre-de-lavariable) */
 body {
     background-color: var(--light-bg-color);
+    color: var(--light-color);
 }
 
 h1{
@@ -46,7 +47,7 @@ button{
     font-size: 2vw;
 }
 
+/*color de fondo inicial de la lista*/
 ol {
     background-color: rgb(230, 230, 230);
-    border: 2px solid rgb(230, 230, 230);
 }
