@@ -2,7 +2,9 @@
 function confirmarEnvio(){
     alert("¡Gracias! Tu consulta será respondida lo antes posible");
 }
-
+function mostrarAyuda(){
+    alert("Tecla Inicio para volver al principio de la página\n" + "Tecla Fin para ir al final del documento.\n" + "Sitio desarrollado por Francisco Trotta para Front end Academy - 2022")
+}
 const form = document.getElementById("formulario-contacto");
 form.addEventListener('submit', confirmarEnvio);
 
@@ -23,10 +25,12 @@ document.getElementById('temaoscuro').addEventListener('click', function(){
     list[0].style.color = "var(--dark-color)";
 })
 
-//funciones de teclas
+//funciones relacionadas al mensaje de ayuda
 
 window.addEventListener('keydown', function(event){
     if(event.key == "h"||event.key == "H"){
-        alert("Tecla Inicio para volver al principio de la página\n" + "Tecla Fin para ir al final del documento.")
+        mostrarAyuda();
     }
 })
+
+document.getElementById('ayuda').addEventListener('click', mostrarAyuda);

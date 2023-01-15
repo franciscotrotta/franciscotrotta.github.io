@@ -1,3 +1,13 @@
+@font-face {
+    font-family: sofiaSans;
+    src: url('fuentes/sofiasans-variablefont_wght.ttf');
+    }
+
+@font-face {
+    font-family: quicksand;
+    src: url('fuentes/quicksand-variablefont_wght.ttf');
+}
+
 /* almacenando variables en el pseudo elemento :root, 
 se vuelven accesibles a todo el documento. :root apunta al
 elemento HTML, pero tiene mayor "especificidad"/peso que hmtl{}(sobreescribe
@@ -16,10 +26,11 @@ utilizando el método var(--nombre-de-lavariable) */
 body {
     background-color: var(--light-bg-color);
     color: var(--light-color);
+    font-family: quicksand;
 }
 
-h1{
-    font-family: Arial, Helvetica, sans-serif;
+h1, h2{
+    font-family: sofiaSans, Helvetica, sans-serif;
     
 }
 
