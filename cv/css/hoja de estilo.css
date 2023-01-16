@@ -13,8 +13,8 @@ se vuelven accesibles a todo el documento. :root apunta al
 elemento HTML, pero tiene mayor "especificidad"/peso que hmtl{}(sobreescribe
 los valores que normalmente se imponen por cascada) */
 :root{
-    --light-bg-color: rgb(215, 238, 113);
-    --dark-bg-color: rgb(32, 32, 28);
+    --light-bg-color: rgb(222, 238, 150);
+    --dark-bg-color: rgb(26, 26, 22);
     --light-color: rgb(0, 0, 0);
     --dark-color: rgb(240, 240, 240);
     --col-light-color: rgb(147, 163, 75);
@@ -63,6 +63,7 @@ overflow: auto;
 button{
     width: 9vw;
     font-size: 1.3vw;
+    display: inline-block;
 }
 
 /*color de fondo inicial de la lista*/
