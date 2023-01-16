@@ -26,7 +26,7 @@ utilizando el método var(--nombre-de-lavariable) */
 body {
     background-color: var(--light-bg-color);
     color: var(--light-color);
-    font-family: quicksand;
+    font-family: quicksand, Verdana, sans-serif;
 }
 
 h1, h2{
