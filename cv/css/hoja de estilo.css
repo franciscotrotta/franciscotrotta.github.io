@@ -8,6 +8,11 @@
     src: url('fuentes/quicksand-variablefont_wght.ttf');
 }
 
+* {
+    box-sizing: border-box;
+  }
+
+
 /* almacenando variables en el pseudo elemento :root, 
 se vuelven accesibles a todo el documento. :root apunta al
 elemento HTML, pero tiene mayor "especificidad"/peso que hmtl{}(sobreescribe
@@ -19,6 +24,7 @@ los valores que normalmente se imponen por cascada) */
     --dark-color: rgb(240, 240, 240);
     --col-light-color: rgb(147, 163, 75);
     --col-dark-color: rgb(22, 22, 9);
+    --button-color: rgb(107, 19, 19);
 }
 
 /* se aplica la variable fijada en la pseudoclase :root,
@@ -37,11 +43,21 @@ h1, h2{
 p{
     text-align: justify;
 }
+.datos{
+    overflow:visible;
+    word-break: keep-all;
+    font-size: 0.7em;
+}
+
 .col-3{
     background-color: var(--col-light-color);
     overflow: auto;
     word-break: break-word;
+    font-size: 0.8em;
+
 }
+
+
 
 /*procurando que la cita en la columna de la izquierda no corte las palabras*/
 .lead{
@@ -53,17 +69,25 @@ form input, form textarea{
     display: block;    
     }
 
-div.fijado {
+.fijado {
 position: fixed;
 top: 0;
 right: 0;
-overflow: auto;
+
 }
 
 button{
-    width: 9vw;
-    font-size: 1.3vw;
     display: inline-block;
+    width: 9vw;
+    min-height: 23px;
+    margin: 0px;
+    padding: 0px;
+    font-size: 1.3vw;
+    line-height: normal;
+    background-color: var(--button-color);
+    color: var(--dark-color);
+    border: none;
+    white-space: nowrap;
 }
 
 /*color de fondo inicial de la lista*/
