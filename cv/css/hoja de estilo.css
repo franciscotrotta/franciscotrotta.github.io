@@ -24,7 +24,8 @@ los valores que normalmente se imponen por cascada) */
     --dark-color: rgb(240, 240, 240);
     --col-light-color: rgb(147, 163, 75);
     --col-dark-color: rgb(22, 22, 9);
-    --button-color: rgb(107, 19, 19);
+    --button-bg-color: rgb(107, 19, 19);
+    --button-hover-bg-color: rgb(199, 0, 0);
 }
 
 /* se aplica la variable fijada en la pseudoclase :root,
@@ -46,14 +47,13 @@ p{
 .datos{
     overflow:visible;
     word-break: keep-all;
-    font-size: 0.7em;
 }
 
 .col-3{
     background-color: var(--col-light-color);
     overflow: auto;
     word-break: break-word;
-    font-size: 0.8em;
+    font-size: 1.5vw;
 
 }
 
@@ -84,10 +84,16 @@ button{
     padding: 0px;
     font-size: 1.3vw;
     line-height: normal;
-    background-color: var(--button-color);
+    background-color: var(--button-bg-color);
     color: var(--dark-color);
     border: none;
     white-space: nowrap;
+    transition-property: background-color;
+    transition-duration: 0.6s;
+}
+
+button:hover{
+    background-color: var(--button-hover-bg-color);
 }
 
 /*color de fondo inicial de la lista*/
