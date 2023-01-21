@@ -17,7 +17,7 @@
 se vuelven accesibles a todo el documento. :root apunta al
 elemento HTML, pero tiene mayor "especificidad"/peso que hmtl{}(sobreescribe
 los valores que normalmente se imponen por cascada) */
-:root{
+:root {
     --light-bg-color: rgb(222, 238, 150);
     --dark-bg-color: rgb(26, 26, 22);
     --light-color: rgb(0, 0, 0);
@@ -36,36 +36,32 @@ body {
     font-family: quicksand, Verdana, sans-serif;
 }
 
-h1, h2{
+h1, h2 {
     font-family: sofiaSans, Helvetica, sans-serif;
-    
 }
 
-p{
+p {
     text-align: justify;
 }
-.datos{
+.datos {
     overflow:visible;
     word-break: keep-all;
 }
 
-.col-3{
+.col-3 {
     background-color: var(--col-light-color);
     overflow: auto;
     word-break: break-word;
     font-size: 1.5vw;
-
 }
 
-
-
 /*procurando que la cita en la columna de la izquierda no corte las palabras*/
-.lead{
+.lead {
     font-size: 2.3vw;
     text-align: start;
 }
 
-form input, form textarea{
+form input, form textarea {
     display: block;    
     }
 
@@ -73,10 +69,9 @@ form input, form textarea{
 position: fixed;
 top: 0;
 right: 0;
-
 }
 
-button{
+button {
     display: inline-block;
     width: 9vw;
     min-height: 23px;
@@ -92,11 +87,16 @@ button{
     transition-duration: 0.6s;
 }
 
-button:hover{
+button:hover {
     background-color: var(--button-hover-bg-color);
 }
 
 /*color de fondo inicial de la lista*/
 ol {
     background-color: rgb(230, 230, 230);
+}
+
+/*modificando el tamaño de los íconos apuntando a la pseudo clase before, de la clase fa del elemento i */
+i.fa::before{
+    font-size: 85%;
 }
