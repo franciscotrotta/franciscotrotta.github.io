@@ -36,15 +36,27 @@ body {
     font-family: quicksand, Verdana, sans-serif;
 }
 
-h1, h2 {
+h1, h2, h5 {
     font-family: sofiaSans, Helvetica, sans-serif;
 }
 
+@media screen and (max-width: 410px) {
+h5{
+    font-size: 2.5vw;
+}
+}
+
+@media screen and (min-width: 500px) {
+
+.col-3 {
+    font-size: 1.9w;
+}
+}
 p {
     text-align: justify;
 }
 .datos {
-    overflow:visible;
+    overflow: visible;
     word-break: keep-all;
 }
 
@@ -71,6 +83,16 @@ top: 0;
 right: 0;
 }
 
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0.5em;
+    max-width: 100%; 
+    height:auto;
+    border-radius: 5px;
+    box-shadow: 3px 3px 8px rgb(71, 71, 71);
+}
 button {
     display: inline-block;
     width: 9vw;
