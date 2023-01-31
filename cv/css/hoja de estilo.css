@@ -40,18 +40,41 @@ h1, h2, h5 {
     font-family: sofiaSans, Helvetica, sans-serif;
 }
 
+/*media queries para controlar el tamaño del título y texto laterales */
 @media screen and (max-width: 410px) {
 h5{
     font-size: 2.5vw;
 }
+
 }
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 300px) {
 
 .col-3 {
-    font-size: 1.9w;
+    font-size: 1.7vw;
+}
+
+}
+
+@media screen and (min-width: 800px){
+
+.datos {
+    font-size: 1.2vw;
 }
 }
+
+@media screen and (max-width: 450px) {
+    .datos {
+        font-size: 1.6vw;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .datos {
+        font-size: 1.4vw;
+    }
+}
+
 p {
     text-align: justify;
 }
