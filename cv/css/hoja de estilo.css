@@ -40,6 +40,9 @@ h1, h2, h5 {
     font-family: sofiaSans, Helvetica, sans-serif;
 }
 
+h1{
+    margin-top: 0.5em;
+}
 /*media queries para controlar el tamaño del título y texto laterales */
 @media screen and (max-width: 410px) {
 h5{
@@ -92,7 +95,7 @@ p {
 
 /*procurando que la cita en la columna de la izquierda no corte las palabras*/
 .lead {
-    font-size: 2.3vw;
+    font-size: 2.1vw;
     text-align: start;
 }
 
@@ -116,17 +119,18 @@ img {
     border-radius: 5px;
     box-shadow: 3px 3px 8px rgb(71, 71, 71);
 }
+
 button {
     display: inline-block;
     width: 9vw;
-    min-height: 23px;
+    min-height: 17px;
     margin: 0px;
     padding: 0px;
     font-size: 1.3vw;
     line-height: normal;
     background-color: var(--button-bg-color);
     color: var(--dark-color);
-    border: none;
+    border: solid 1px black;
     white-space: nowrap;
     transition-property: background-color;
     transition-duration: 0.6s;
@@ -136,9 +140,19 @@ button:hover {
     background-color: var(--button-hover-bg-color);
 }
 
-/*color de fondo inicial de la lista*/
+/*atributos de la lista ordenada*/
 ol {
-    background-color: rgb(230, 230, 230);
+    background-color: rgb(222, 203, 133);
+    max-width: 85%;
+}
+
+/*divisor entre H1 y lista */
+hr{
+    margin-top: 0px;
+    margin-bottom: 0.7em;
+    color: gray;
+    background-color: gray;
+    border-width: 0.1em;
 }
 
 /*modificando el tamaño de los íconos apuntando a la pseudo clase before, de la clase fa del elemento i */
